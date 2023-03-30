@@ -1,0 +1,142 @@
+.container {
+    font-family: Arial, Helvetica, sans-serif;
+    display: grid;
+    grid-template-columns: 3fr minmax(240px, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas:
+        "header header"
+        "section-1 aside"
+        "section-2 aside"
+        "section-3 aside";
+    column-gap: 16px;
+    row-gap: 12px;
+    padding: 0 44px 50px 20px;
+    color: rgb(90, 90, 90);
+}
+
+.header {
+    grid-area: header;
+    background-color: rgb(236, 236, 236);
+}
+
+.header img {
+    width: 100%;
+}
+
+.description {
+    display: grid;
+    grid-template-columns: 1fr 100px;
+    gap: 30px;
+    padding: 0 12px;
+    align-items: center;
+    margin: 0;
+}
+
+.description p:first-child {
+    font-weight: bold;
+    font-size: 15px;
+    margin: 0;
+}
+
+.description p:last-child {
+    background-color: rgb(131, 11, 13);
+    border-radius: 5px;
+    padding: 5px 10px;
+    border: none;
+    color: rgb(216, 215, 215);
+    font-weight: bold;
+    font-size: 15px;
+    text-align: center;
+}
+
+.aside {
+    grid-area: aside;
+    background-color: rgb(234, 220, 194);
+    padding: 16px 0 0 16px;
+}
+
+.aside p:first-child {
+    color: rgb(131, 11, 13);
+    font-weight: bold;
+}
+
+.aside form span {
+    color: rgb(131, 11, 13);
+    font-weight: bold;
+}
+
+.aside form a {
+    text-decoration: none;
+    color: rgb(131, 11, 13);
+    font-size: 12px;
+    font-weight: bold;
+    margin-left: 8px;
+}
+
+.aside form div>input {
+    width: 110px;
+    margin-bottom: 12px;
+}
+
+.aside form input:last-child {
+    background-color: rgb(131, 11, 13);
+    border-radius: 5px;
+    padding: 5px;
+    border: none;
+    color: rgb(216, 215, 215);
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.aside nav {
+    margin-top: 25px;
+    color: rgb(131, 11, 13);
+}
+
+.aside nav ul {
+    margin: 12px 0;
+    list-style: square;
+}
+
+.section-1 {
+    grid-area: section-1;
+}
+
+h2 {
+    margin: 12px 0 4px 0;
+    color: rgb(131, 11, 13);
+}
+
+.card-car {
+    display: grid;
+    grid-template-columns: minmax(200px, 1fr) 3fr;
+    gap: 10px;
+    margin: 7px 0 0 0;
+}
+
+.card-car img {
+    width: 100%;
+}
+
+.card-car p {
+    margin: 0;
+}
+
+.section-2 {
+    grid-area: section-2;
+}
+
+.section-3 {
+    grid-area: section-3;
+}
+
+footer {
+    background-color: rgb(131, 11, 13);
+    color: rgb(216, 215, 215);
+    padding: 7px;
+    margin-top: 7px;
+}
+
+footer span {
+    margin: 0 10px;
+}
