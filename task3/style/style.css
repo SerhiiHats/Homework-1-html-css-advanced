@@ -1,0 +1,136 @@
+.container {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px 150px 10px 40px;
+    display: grid;
+    grid-template-columns: 3fr repeat(9, 1fr);
+    grid-template-rows: repeat(2, 1fr 8fr);
+    grid-template-areas: 
+    "header header header header header header header header header header"
+    "major-1 major-1 major-1 major-1 major-2 major-2 major-2 major-2 major-2 major-2"
+    "sub sub sub sub sub sub sub sub sub sub sub sub"
+    "card-news-1 card-news-1  card-news-1  card-news-1  card-news-1  card-news-1  card-news-1  card-news-1  card-news-1  card-news-1  card-news-1 card-news-1"
+ 
+}
+
+.header {
+    display: grid;
+    /* grid-template-columns: 195px repeat(9, 1fr);
+    align-items: flex-start; */
+    grid-area: header;
+}
+
+h1 {
+    color: #2990d2;
+    font-size: 56px;
+    margin: 0;
+    align-self: start;
+
+}
+
+h1 span {
+    color: #bfbec3;
+    font-size: 36px;
+    margin: 0;
+    margin-top: 3px;
+    text-align: start;
+}
+
+/* .header>div {
+    background-color: #2990d2;
+    color: #e6ebf5;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 8px 10px;
+    margin-top: 10px;
+    text-align: center;
+} */
+
+/* .header>div:nth-child(even) {
+    margin-left: 2px;
+} */
+
+.major-1 {
+    grid-area: major-1;
+    /* display: grid;
+    grid-template-columns: 5fr 4fr;
+    gap: 30px;
+    padding-top: 40px; */
+}
+
+.major-1 img:first-child {
+    background-color: #2990d2;
+    
+}
+
+.major-1 div:first-child img {
+    width: 100%;
+    margin: 0;
+}
+
+.major-1 div:first-child p {
+    grid-area: major-1
+    color: #e6ebf5;
+    margin: 0;
+    padding: 2px 0 3px 15px;
+    font-size: 20px;
+}
+
+.major div:last-child {
+    color: #b1b1b3;
+}
+
+.major div:last-child h3 {
+    margin-top: 0;
+    font-size: 32px;
+}
+
+.major div:last-child p {
+    font-size: 24px;
+}
+
+h4 {
+    color: #b1b1b3;
+    font-size: 30px;
+    margin: 30px 0;
+}
+
+.news {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    font-weight: bold;
+}
+
+.news>div {
+    color: #b1b1b3;
+}
+
+.news>div>img {
+    width: 100%;
+}
+
+.news>div h5 {
+    font-size: 24px;
+    margin: 15px 0;
+}
+
+.news>div p {
+    font-size: 18px;
+}
+
+.news>div>p:nth-child(4) {
+    margin-bottom: 30px;
+}
+
+.news a {
+    text-decoration: none;
+    color: rgb(90, 90, 90);
+    padding: 10px 0;
+}
+
+.news a span:last-child {
+    color: #b1b1b3;
+    margin: 0 10px;
+}
+
+*/
